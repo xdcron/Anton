@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Power of Purpose</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="">
+    <div class="sticky top-0 bg-gold pb-[0.3rem] z-10">
+      <nav class="pt-[10px] md:flex md:justify-between md:items-center px-8">
+        <div class="mx-4 flex items-center justify-between">
+          <div>
+            <a href="index.html"
+              ><img
+                class="h-16 inline cursor-pointer"
+                src="images/logo.png"
+                alt="logo"
+            /></a>
+          </div>
+          <div>
+            <p
+              class="uppercase text-lightGold text-[1.3rem] font-bold md:ml-3 mr-4"
+            >
+              knowledge is power
+            </p>
+          </div>
+          <span
+            id="menu"
+            class="z-10 md:hidden cursor-pointer hover:translate-y-[-5px] transition-all ease-in duration-100"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="#F9F18F"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </span>
+        </div>
+
+        <div
+          id="nav-list"
+          class="md:flex w-[50%] sm:right-0 font-[600] text-gold md:text-[1.2rem] z-[5] md:z-auto md:static absolute right-0 top-[20px] md:w-auto hidden md:opacity-100"
+        >
+          <span
+            id="close"
+            class="flex justify-end pr-5 cursor-pointer hover:translate-y-[3px] transition-all ease-in duration-100"
+          >
+            <span class="sr-only">close main menu</span>
+            <img class="md:hidden" src="images/x.svg" alt="close icon" />
+          </span>
+          <ul
+            class="bg-gold md:flex w-full sm:right-0 font-[600] text-lightGold md:text-[1.2rem] z-[5] md:z-auto md:static absolute right-0 top-[50px] md:w-auto pr-3 md:opacity-100"
+          >
+            <li class="mx-5 my-4 flex justify-center">
+              <a
+                class="hover:text-lightGold hover:translate-y-[-4px] duration-200 nav-link"
+                href="#about"
+              >
+                About
+              </a>
+            </li>
+
+            <li class="mx-5 my-4 flex justify-center">
+              <a
+                class="hover:text-lightGold hover:translate-y-[-4px] duration-200 nav-link"
+                href="#vision"
+              >
+                Vision
+              </a>
+            </li>
+            <li class="mx-5 my-4 flex justify-center">
+              <a
+                class="hover:text-lightGold hover:translate-y-[-4px] duration-200 nav-link"
+                href="#Services"
+              >
+                Services
+              </a>
+            </li>
+            <li class="mx-5 md:relative top-[-10px] my-4 flex justify-center">
+              <a
+                class="bg-lightGold p-2 rounded-md text-gold hover:translate-y-[-4px] hover:bg-yellow-200 transition-all ease-in duration-200 hover:text-yellow-500 nav-link"
+                href="#contact"
+              >
+                Contact Me
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <header class="md:flex md:gap-x-[60px] pt-0 items-center px-14">
+      <div class="flex flex-col md:w-[100%] md:items-start items-center">
+        <div class="max-w-[400px]">
+          <img
+            class="md:hidden my-7 w-full rounded-lg"
+            src="images/Anton6.jpg"
+            alt="Antony Ngabwe"
+            loading="lazy"
+          />
+        </div>
+        <div class="flex flex-col gap-10 relative top-[-14px]">
+          <div>
+            <h1
+              id="heading"
+              class="text-[3rem] sm:text-center md:text-start sm:leading-[60px] md:text-[5rem] md:leading-[100px] text-gold mb-9"
+            >
+              <strong> I'm Antony Ngabwe </strong>
+            </h1>
+
+            <p class="text-gold md:pr-16 text-[1.1rem] font-medium">
+              "Anthony N. M. (Ngabwe Mutyoka) is an honors graduate in social
+              sciences, specializing in Community Development, Human Resource
+              Training, and Project Management. His commitment to growth is
+              evident in his acquisition of numerous certificates, including
+              Gender Studies, HIV Counseling, Counseling Facilitation, Training,
+              Children's Nutrition, Healthy Living, Conflict Management, and
+              Leadership.
+            </p>
+            <p class="text-gold md:pr-16 text-[1.1rem] font-medium mt-3">
+              Anthony is also a prolific author, known for impactful books like
+              'Marriage is for the Dead,' which delves into the 12 habits that
+              can endanger marriages. Beyond his literary pursuits, he's a
+              passionate artist in poetry, music, and film, tackling pressing
+              social issues. Additionally, Anthony is a skilled public speaker,
+              inspirational figure, TV, and radio personality, with a focus on
+              community engagement.
+            </p>
+          </div>
+          <div class="flex md:justify-start justify-center" id="action">
+            <a
+              class="hover:text-lightGold hover:bg-gold rounded-md hover:translate-y-[-4px] duration-200 nav-link text-gold border-2 border-gold p-2 font-bold"
+              href="#products"
+            >
+              Buy a Book Now!!
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <img
+          class="w-[100%] hidden md:block z-[-1]"
+          src="images/AntonProfessional-removebg.png"
+          alt="Antony Ngabwe"
+          loading="lazy"
+        />
+      </div>
+    </header>
+    <section
+      id="about"
+      class="px-14 pt-5 md:mt-14 text-center md:text-start section transition-all duration-1000"
+    >
+      <div class="md:grid gap-4 md:grid-cols-2">
+        <div class="relative bottom-[-60px]">
+          <h2 class="text-gold text-[2.5rem] font-bold pb-6">About</h2>
+          <p class="text-gold font-medium">
+            At 'The Power of Purpose,' we firmly believe that our path to
+            improvement lies in the principles of love and service, both to God
+            and to our fellow human beings. We recognize that creating a better
+            society requires the combined efforts of all its members. Our
+            mission at 'The Power of Purpose' is deeply rooted in the holistic
+            development of humanity across every facet of life. We invite you to
+            join us in turning this vision into reality, understanding that
+            while a vision and talent may be granted to one, their true purpose
+            is to enrich the lives of all.
+          </p>
+        </div>
+        <div
+          class="rounded-lg flex relative bottom-[-60px] items-center mt-10 md:mt-auto"
+        >
+          <img
+            loading="lazy"
+            class="rounded-lg"
+            src="images/Anton2.jpg"
+            alt="Antony Ngabwe"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+    <section
+      id="vision"
+      class="flex flex-col px-8 py-24 md:px-48 items-center pt-28 z-[-10] section"
+    >
+      <div
+        id="tab-container"
+        class="flex justify-around w-full relative bottom-[-7px]"
+      >
+        <button
+          data-tab="1"
+          class="text-0.7rem sm:px-3 sm:py-1 btn transition-all ease-in duration-200 aim-active md:px-7 md:py-2 rounded-lg font-semibold tabs bg-gold translate-y-[-10px] text-lightGold"
+        >
+          Vision
+        </button>
+
+        <button
+          data-tab="2"
+          class="text-0.7rem sm:px-3 sm:py-1 btn transition-all ease-in duration-200 bg-lightGold md:px-7 md:py-2 rounded-lg text-gold font-semibold tabs"
+        >
+          Mission
+        </button>
+
+        <button
+          data-tab="3"
+          class="text-0.7rem sm:px-3 sm:py-1 btn transition-all ease-in duration-200 bg-lightGold md:px-7 md:py-2 rounded-lg text-gold font-semibold tabs"
+        >
+          Core Values
+        </button>
+      </div>
+      <div class="w-full">
+        <div class="content-container py-8 px-10 bg-gold rounded-lg content--1">
+          <div class="mb-1">
+            <h3 class="text-lightGold font-bold text-[2rem] text-center mb-4">
+              Vision
+            </h3>
+            <div class="flex flex-col items-center">
+              <p class="text-lightGold">
+                Our mission is to cultivate a nation of individuals who lead
+                lives of purpose, strength, and prosperity. We draw inspiration
+                from the wisdom of Romans 8:28 AMP, which assures us that all
+                things work together for good in the lives of those who love God
+                and are called according to His divine design and purpose.
+              </p>
+            </div>
+          </div>
+          <button
+            id="show-modal-1"
+            class="text-gold bg-lightGold px-4 py-2 rounded-lg mt-10 font-semibold hover:bg-yellow-600 hover:text-lightGold hover:translate-y-[-5px] transition-all ease-in duration-150"
+          >
+            Read More
+          </button>
+        </div>
+        <div
+          class="w-full content-container hidden py-8 px-10 p-6 bg-gold rounded-lg content--2"
+        >
+          <div class="mb-1">
+            <h3 class="text-lightGold font-bold text-[2rem] text-center mb-4">
+              Mission
+            </h3>
+            <div class="flex flex-col items-center">
+              <p class="text-lightGold">
+                I specialize in guiding individuals on a transformative journey,
+                helping them unearth their inner gifts and talents. With a keen
+                focus on nurturing these unique qualities, I empower individuals
+                to develop them into valuable, practical skills. Ultimately, my
+                mission is to assist in successfully deploying these honed
+                talents and skills within the dynamic marketplace.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="content-container hidden py-8 px-10 p-6 bg-gold rounded-lg content--3"
+        >
+          <div class="mb-1">
+            <h3 class="text-lightGold font-bold text-[2rem] text-center mb-4">
+              Core Values
+            </h3>
+            <div class="flex flex-col items-center">
+              <p class="text-lightGold">
+                At the heart of our organization lie a set of unwavering core
+                values: Love, Respect, Unity, and Courage. We also hold dear the
+                principles of Integrity, Humility, and Discipline. In addition,
+                we uphold a commitment to Confidentiality, unwavering
+                Commitment, Consistency, and unwavering Professionalism as the
+                guiding lights of our work.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="more-content"
+          class="hidden max-h-[500px] overflow-auto md:h-auto bg-lightGold px-8 py-5 rounded-lg fixed z-30 left-[33%] translate-x-[-25%] translate-y-[-25%] top-[35%] max-w-[800px]"
+        >
+          <div class="flex justify-end cursor-pointer">
+            <svg
+              id="close-modal"
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#9E6C16"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-x"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </div>
+          <p class="text-gold my-2">
+            The meaning and purpose of life will never be found in humanism
+            orthodox or ideologies. The purpose of each life can only be
+            discovered through the designer and giver of life, God.
+          </p>
+
+          <p class="text-gold">
+            Each time you find yourself conflicted as to the meaning of life,
+            especially during hardship, challenges, problems, sickness or death.
+            Go back back to the basic and to the source of life. Consult with
+            God as to the state of affairs,
+          </p>
+
+          <div class="my-8">
+            <p class="text-gold">Maybe you are in the State of</p>
+            <p class="text-gold">Job, - tested for God's Glory</p>
+            <p class="text-gold">Jacob - trails due to deception and lying</p>
+            <p class="text-gold">Joseph - tempted and trails due to destiny</p>
+          </div>
+
+          <p class="text-gold">
+            Whichever situation you are in, knowing that if God is at the center
+            of your life, God will turn everything around for your good and for
+            his glory.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="Services"
+      class="bg-lightGold py-20 px-10 section transition-all duration-1000"
+    >
+      <div class="flex flex-col items-center relative bottom-[-60px]">
+        <div class="md:flex md:gap-x-9 mb-8">
+          <div class="flex flex-col items-center">
+            <h2 class="font-bold text-gold text-[2rem] mb-4">My Services</h2>
+            <p class="text-gold font-semibold text-center">
+              As a ministry and organization, our mission is to provide
+              enlightenment through a range of diverse programs tailored for the
+              community, church, and corporate sectors.
+            </p>
+
+            <ul
+              class="text-gold flex flex-col items-center pt-10 pb-8 text-center"
+            >
+              <li>Practical training, Counceling, Coaching and teaching.</li>
+              <li>Leadership and Personal Growth.</li>
+              <li>Confidence, Attitude Development and Presentation Skills.</li>
+              <li>Mentorship, Motivational Speaking and Customer Service.</li>
+              <li>Customer Relations, Time Management, Gender and HIV.</li>
+              <li>Conflict, Relationship, Singles, Marriage and Parenting.</li>
+              <li>Discovering and Developing Purpose and Destiny.</li>
+            </ul>
+            <button
+              id="btn-services"
+              class="text-lightGold bg-gold py-2 px-3 rounded-lg font-semibold hover:bg-yellow-600 hover:text-yellow-900 hover:translate-y-[-5px] transition-all ease-in duration-150"
+            >
+              MORE SERVICES
+            </button>
+          </div>
+          <div class="flex justify-center mt-8">
+            <iframe
+              src="https://www.youtube.com/embed/n9NFKZ-paGQ?si=HPPjAypD9Jem0mCS"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              class="rounded-lg w-full h-[375px] md:w-[575px] md:h-[375px]"
+            ></iframe>
+          </div>
+        </div>
+        <div
+          id="services"
+          class="hidden max-w-[800px] overflow-auto md:overflow-hidden my-5 py-10 px-8 bg-Dgold max-h-[500px] md:h-auto rounded-lg fixed z-30 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
+        >
+          <span
+            aria-label="close button"
+            class="flex justify-end cursor-pointer max-h-[500px] md:h-auto"
+          >
+            <img
+              id="close-modal-2"
+              src="images/modal-close.svg"
+              aria-label="close button"
+              alt="X"
+            />
+          </span>
+          <div class="flex gap-5">
+            <ul class="text-lightGold">
+              <li>Leadership Training</li>
+              <li>Public Speaking</li>
+              <li>Self-Discipline</li>
+              <li>Self-Condidence</li>
+              <li>Counceling and Mentorship</li>
+              <li>Life Coaching</li>
+              <li>Entrepreneurship</li>
+              <li>Excellence in Business</li>
+              <li>Team Work</li>
+              <li>Customer Service</li>
+              <li>linking personal purpose to professional purpose</li>
+            </ul>
+            <ul class="text-lightGold">
+              <li>Men Empowerment</li>
+              <li>Emotional Intelligence</li>
+              <li>Developing an Attractive Attitude</li>
+              <li>Boys to Men guidance</li>
+              <li>Manhood to Fatherhood</li>
+              <li>Marriage Counceling</li>
+              <li>Purpose and Destiny Discovering</li>
+              <li>Turning Talent and Gift into Trade</li>
+              <li>Additional Value of Service or Product</li>
+              <li>Selling based on Value</li>
+              <li>gender and Social issues</li>
+              <li>Relationship and Singles</li>
+              <li>Writers and Aurthors</li>
+              <li>Basic Theology and Spirituality</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="products"
+      class="products bg-gold py-16 px-10 flex flex-col gap-6 items-center section transition-all duration-1000"
+    >
+      <h2 class="uppercase text-lightGold text-[2rem] font-bold">Books</h2>
+      <div
+        class="bg-lightGold max-w-[476px] md:max-w-[700px] p-7 rounded-lg md:flex gap-8"
+      >
+        <div class="h-[200px] md:h-auto md:w-auto flex justify-center mb-6">
+          <img
+            class="max-w-[150px]"
+            src="images/broken-calabash.jpg"
+            alt="Broken Calabash"
+            loading="lazy"
+          />
+        </div>
+        <div>
+          <div class="w-full mb-3">
+            <h4 class="text-[1.8rem] font-bold text-gold mb-5">
+              Broken Calabash Poetry Book
+            </h4>
+            <p class="text-gold font-medium mb-3">Greetings</p>
+            <p class="text-gold font-medium mb-3">
+              Discover an inspiring and contemporary poetry book that delves
+              into the heart of African culture, gender dynamics, social issues,
+              and the complexities of romance, addressing both men's and women's
+              experiences.
+            </p>
+            <p class="text-gold font-medium">Get yours NOW!!</p>
+          </div>
+          <div class="mt-5">
+            <a
+              href="https://www.amazon.com/dp/B0CGP5KCMF"
+              target="_blank"
+              class="text-lightGold font-semibold bg-gold py-2 px-4 rounded-lg hover:border-[2px] hover:border-gold hover:bg-lightGold hover:text-gold"
+              >Buy Now</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="bg-lightGold md:w-[700px] p-7 rounded-lg md:flex gap-8">
+        <div class="h-[200px] md:h-auto md:w-auto justify-center mb-6 flex">
+          <img
+            class="max-w-[150px]"
+            src="images/wounded-women.jpg"
+            alt="Wounded women"
+            loading="lazy"
+          />
+        </div>
+        <div>
+          <div class="w-full mb-3">
+            <h4 class="text-[1.8rem] font-bold text-gold mb-5">
+              Wounded Woman Poetry Book
+            </h4>
+            <p class="text-gold font-medium mb-3">Greetings,</p>
+            <p class="text-gold font-medium">
+              Here is a poetry book for WOMEN AND GIRLS,
+            </p>
+            <ul class="text-gold font-medium">
+              <li>Comfort the wounded</li>
+              <li>Confront the wicked</li>
+              <li>Console the conflicted.</li>
+            </ul>
+          </div>
+          <p class="text-gold font-medium">Get yours NOW!!</p>
+          <div class="mt-5">
+            <a
+              href="https://www.amazon.com/dp/B0CGP6CXC2"
+              target="_blank"
+              class="text-lightGold font-semibold bg-gold py-2 px-4 rounded-lg hover:border-[2px] hover:border-gold hover:bg-lightGold hover:text-gold"
+              >Buy Now</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="mt-5">
+        <a
+          target="_blank"
+          class="text-gold font-semibold bg-lightGold py-3 px-5 rounded-lg hover:border-[2px] hover:border-lightGold hover:bg-gold hover:text-lightGold"
+          href="books.html"
+          >All Books</a
+        >
+      </div>
+    </section>
+    <section
+      class="py-16 px-14 flex flex-col items-center section transition-all duration-1000"
+    >
+      <div class="mb-6">
+        <h2 class="text-gold font-bold text-[2rem]">Wonder Women Namibia</h2>
+      </div>
+      <div class="flex flex-wrap md:flex-nowrap gap-8">
+        <div class="">
+          <img
+            class="max-w-[500px] min-w-[300px] rounded-lg"
+            src="images/wonder-women.jpg"
+            alt="wonder women"
+            loading="lazy"
+          />
+        </div>
+        <div class="flex flex-col justify-center mb-5">
+          <p class="text-gold font-medium text-[1.1rem]">
+            Women Pursuing their purpose
+          </p>
+          <p class="text-gold font-medium text-[1.1rem]">
+            While there's nothing wrong with feeling broken at times, remember
+            not to linger there for too long. View your past experiences as
+            lessons, not life sentences. Rise each time you fall, and once
+            you've overcome, stand strong. Don't allow anyone to bring you back
+            to a place from which you've already prayed your way out.
+          </p>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-gold text-[1.8rem] font-semibold mb-4">Socials</h3>
+        <div class="flex gap-5">
+          <a
+            target="_blank"
+            class="hover:translate-y-[-5px]"
+            href="https://www.facebook.com/profile.php?id=100064737277460"
+            ><img src="images/facebook-light.svg" alt="facebook"
+          /></a>
+          <a
+            target="_blank"
+            class="hover:translate-y-[-5px]"
+            href="https://www.instagram.com/wonderwomen_namibia/"
+            ><img src="images/instagram-light.svg" alt="instagram"
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="pt-16">
+      <div class="md:grid md:grid-cols-2 pb-4">
+        <div class="text-center md:px-10 mb-12 md:mb-0">
+          <p class="text-gold text-[1.5rem] font-semibold">
+            Past is the graveyard for your death, present has potential and
+            possibilities to create your future, life is always infront on you
+            and not behind you, please <span>DO NOT LOOK BACK!</span>
+          </p>
+        </div>
+        <div class="flex justify-center w-full">
+          <iframe
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fanthony.ngabwe%2Fposts%2Fpfbid07LVikTtbFowU4R92Z7kg7gCr9pBFbQmDsX25usCkBBAyNSBo31CCaFLbXu2QgUa9l&show_text=true&width=500"
+            width="500"
+            height="300"
+            style="border: none; overflow: hidden"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            class="rounded-md"
+          ></iframe>
+        </div>
+      </div>
+      <div
+        id="contact"
+        class="bg-gold py-8 px-14 flex justify-between flex-wrap md:flex-nowrap"
+      >
+        <div class="w-full flex justify-center md:w-auto">
+          <a href="index.html"
+            ><img
+              class="max-w-[100px]"
+              src="images/logo.png"
+              alt="logo"
+              loading="lazy"
+          /></a>
+        </div>
+        <div class="flex flex-col justify-center mt-8 md:mt-0 w-full md:w-auto">
+          <a
+            href="tel:+26481406 967"
+            class="text-blue-900 underline text-[1.2rem] text-center"
+          >
+            Phone: +264 81 406 3967
+          </a>
+          <a
+            href="mailto:angabwe@gmail.com"
+            class="text-blue-900 underline text-[1.2rem] text-center"
+          >
+            Email: angabwe@gmail.com
+          </a>
+        </div>
+        <div class="flex mt-8 md:mt-0 justify-center w-full md:w-auto">
+          <ul class="h-full items-center flex gap-4">
+            <li class="hover:translate-y-[-6px]">
+              <a
+                href="https://www.youtube.com/@thepowerofpurposeafrica3553"
+                target="_blank"
+                ><img src="images/youtube.svg" alt="youtube"
+              /></a>
+            </li>
+            <li class="hover:translate-y-[-6px]">
+              <a href="https://www.instagram.com/anthonynm7/" target="_blank"
+                ><img src="images/instagram.svg" alt="instagram"
+              /></a>
+            </li>
+            <li class="hover:translate-y-[-6px]">
+              <a href="https://www.facebook.com/anthony.ngabwe" target="_blank"
+                ><img src="images/facebook.svg" alt="facebook"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bg-gold border-t-2 px-14 py-1">
+        <p class="text-lightGold text-center">Made and Designed by Caleb Odo</p>
+      </div>
+    </footer>
+
+    <div
+      id="overlay"
+      class="fixed top-0 left-0 right-0 bottom-0 bg-yellow-600 opacity-[0.05] z-20 hidden"
+    ></div>
+    <script src="src/js/script.js"></script>
+    <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+  </body>
+</html>

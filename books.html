@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Books</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="src/js/books.js"></script>
+  </head>
+  <body>
+    <div class="sticky top-0 bg-yellow-100 z-10">
+      <nav class="pt-[20px] md:flex md:justify-between md:items-center px-14">
+        <div class="mx-4 flex items-center justify-between">
+          <div>
+            <a href="index.html"
+              ><img
+                class="h-16 inline cursor-pointer"
+                src="images/logo.png"
+                alt="logo"
+            /></a>
+          </div>
+          <div>
+            <p class="uppercase text-gold text-[1.3rem] font-bold md:ml-3">
+              knowledge is power
+            </p>
+          </div>
+          <span
+            id="menu"
+            class="z-10 md:hidden cursor-pointer hover:translate-y-[-5px] transition-all ease-in duration-100"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="#9E6C16"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </span>
+        </div>
+
+        <div
+          id="nav-list"
+          class="md:flex w-[50%] sm:right-0 font-[600] text-gold md:text-[1.2rem] z-[5] md:z-auto md:static absolute right-0 top-[40px] md:w-auto hidden md:opacity-100"
+        >
+          <span
+            id="close"
+            class="flex justify-end pr-5 cursor-pointer hover:translate-y-[3px] transition-all ease-in duration-100 md:hidden"
+          >
+            <span class="sr-only">close main menu</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#9E6C16"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-x"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </span>
+          <ul
+            class="bg-yellow-100 md:flex w-full sm:right-0 font-[600] text-gold md:text-[1.2rem] z-[5] md:z-auto md:static absolute right-0 top-[40px] md:w-auto pr-3 md:opacity-100"
+          >
+            <li class="mx-5 md:relative top-[-10px] my-4 flex justify-center">
+              <a
+                class="bg-Dgold p-2 rounded-md text-white hover:translate-y-[-4px] hover:bg-lightGold transition-all ease-in duration-200 hover:text-gold nav-link"
+                href="#contact"
+              >
+                Contact Me
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <main>
+      <section class="bg-gold py-20 px-10 flex flex-col gap-6 items-center">
+        <h1 class="text-lightGold font-bold text-[2rem]">ALL BOOKS</h1>
+        <div
+          class="bg-lightGold max-w-[476px] md:max-w-[700px] p-7 rounded-lg md:flex gap-8"
+        >
+          <div class="h-[200px] md:h-auto md:w-auto flex justify-center mb-6">
+            <img src="images/broken-calabash.jpg" alt="" />
+          </div>
+          <div>
+            <div>
+              <h4 class="text-[1.8rem] font-bold text-gold mb-5">
+                Broken Calabash Poetry Book
+              </h4>
+              <p class="text-gold font-medium mb-3">Greetings</p>
+              <p class="text-gold font-medium mb-3">
+                Here is an amazing inspiration and contemporary poetry book,
+                addressing African Culture, Gender, Social, Romance, Men and
+                Women Issues.
+              </p>
+              <p class="text-gold font-medium">Get yours NOW!!</p>
+            </div>
+            <div class="mt-5">
+              <a
+                href="https://www.amazon.com/dp/B0CGP5KCMF"
+                target="_blank"
+                class="text-lightGold font-semibold bg-gold py-2 px-4 rounded-lg hover:border-[2px] hover:border-gold hover:bg-lightGold hover:text-gold"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="bg-lightGold md:w-[700px] p-7 rounded-lg md:flex gap-8">
+          <div class="h-[200px] md:h-auto md:w-auto justify-center mb-6 flex">
+            <img class="max-w-[150px]" src="images/wounded-women.jpg" alt="" />
+          </div>
+          <div>
+            <div class="w-full mb-3">
+              <h4 class="text-[1.8rem] font-bold text-gold mb-5">
+                Wounded Woman Poetry Book
+              </h4>
+              <p class="text-gold font-medium mb-3">Greetings,</p>
+              <p class="text-gold font-medium">
+                Here is a poetry book for WOMEN AND GIRLS,
+              </p>
+              <ul class="text-gold font-medium">
+                <li>Comfort the wounded</li>
+                <li>Confront the wicked</li>
+                <li>Console the conflicted.</li>
+              </ul>
+            </div>
+            <p class="text-gold font-medium">Get yours NOW!!</p>
+            <div class="mt-5">
+              <a
+                href="https://www.amazon.com/dp/B0CGP6CXC2"
+                target="_blank"
+                class="text-lightGold font-semibold bg-gold py-2 px-4 rounded-lg hover:border-[2px] hover:border-gold hover:bg-lightGold hover:text-gold"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 class="text-lightGold text-[2.5rem]">
+            <strong> More Books </strong>
+          </h2>
+          <ul class="text-lightGold text-[1.1rem]">
+            <li>
+              <p>Excellence without excuse</p>
+            </li>
+            <li>
+              <p>Marriage is for the dead</p>
+            </li>
+          </ul>
+          <div class="mt-5">
+            <p class="text-lightGold font-bold text-[1.5rem]">
+              Contact me for a copy of the book
+            </p>
+            <p class="text-lightGold text-[1.2rem]">Phone: +264 81 406 3967</p>
+            <p class="text-lightGold text-[1.2rem]">Email: angabwe@gmail.com</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="pt-16">
+      <div
+        class="flex px-14 md:px-24 py-10 flex-wrap md:flex-nowrap justify-center"
+      >
+        <div class="flex items-center md:px-36 mb-12 md:mb-0">
+          <p class="text-gold text-[1.5rem] font-semibold">
+            Past is the graveyard for your death, present has potential and
+            possibilities to create your future, life is always infront on you
+            and not behind you, please <span>DO NOT LOOK BACK!</span>
+          </p>
+        </div>
+        <div class="md:w-full">
+          <iframe
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fanthony.ngabwe%2Fposts%2Fpfbid07LVikTtbFowU4R92Z7kg7gCr9pBFbQmDsX25usCkBBAyNSBo31CCaFLbXu2QgUa9l&show_text=true&width=500"
+            width="500"
+            height="300"
+            style="border: none; overflow: hidden"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            class="rounded-md w-full"
+          ></iframe>
+        </div>
+      </div>
+      <div
+        id="contact"
+        class="bg-gold py-8 px-14 flex justify-between flex-wrap md:flex-nowrap"
+      >
+        <div class="w-full flex justify-center md:w-auto">
+          <img class="max-w-[100px]" src="images/logo.png" alt="logo" />
+        </div>
+        <div class="flex flex-col justify-center mt-8 md:mt-0 w-full md:w-auto">
+          <a
+            href="tel:+26481406 967"
+            class="text-blue-900 underline text-[1.2rem] text-center"
+          >
+            Phone: +264 81 406 3967
+          </a>
+          <a
+            href="mailto:angabwe@gmail.com"
+            class="text-blue-900 underline text-[1.2rem] text-center"
+          >
+            Email: angabwe@gmail.com
+          </a>
+        </div>
+        <div class="flex mt-8 md:mt-0 justify-center w-full md:w-auto">
+          <ul class="h-full items-center flex gap-4">
+            <li class="hover:translate-y-[-6px]">
+              <a href="https://www.youtube.com/@thepowerofpurposeafrica3553"
+                ><img src="images/youtube.svg" alt=""
+              /></a>
+            </li>
+            <li class="hover:translate-y-[-6px]">
+              <a
+                href="https://www.instagram.com/explore/tags/thepowerofpurposeafrica/"
+                ><img src="images/instagram.svg" alt=""
+              /></a>
+            </li>
+            <li class="hover:translate-y-[-6px]">
+              <a
+                href="https://m.facebook.com/anthony.ngabwe?eav=AfayF4zGB8L79D-b_Xcn4DNhnQ5wtWydRVB_2UC6uYzN5QoiDvvx3W5Xo_bsmIcnlRo&paipv=0"
+                ><img src="images/facebook.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bg-gold border-t-2 px-14 py-1">
+        <p class="text-lightGold text-center">Made and Designed by Caleb Odo</p>
+      </div>
+    </footer>
+  </body>
+</html>
